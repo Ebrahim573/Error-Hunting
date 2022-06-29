@@ -55,6 +55,9 @@ app.get('/', function(req, res) {
 
 });
 
+app.get('/data', function(req, res) {
+	res.send(nav);
+});
 
 app.listen(process.env.PORT || 5000, () => {
     console.log("Server Ready on 5000"); //part 1 point 5
