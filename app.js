@@ -1,4 +1,4 @@
-const express = require('express'); //Part #2 Point 1 --> Added node modules & //Part #1 Point 1 --> installed express
+const express = require('express'); //Part #2 Point 1 --> Added node modules  //Part #1 Point 1 --> installed express
 const path = require('path');
 const cors = require('cors');
 const bodyParser = require('body-parser')  // Part #1 Point 2 .  bodyparser defined//
@@ -25,8 +25,8 @@ const nav = [{
 const loginRouter = require('./src/routes/loginroute');
 const signupRouter = require('./src/routes/signuproute');
 const homeRouter = require('./src/routes/homerouter'); //Part #1 Point 3 changed homeroute to homerouter
-const booksRouter = require('./src/routes/booksroute');//Part #2 Point 6
-const authorsRouter = require('./src/routes/authorsroute');//Part #2 Point 6
+const booksRouter = require('./src/routes/booksroute')(nav);//Part #2 Point 6
+const authorsRouter = require('./src/routes/authorsroute')(nav);//Part #2 Point 6
 
 const app = new express;
 
