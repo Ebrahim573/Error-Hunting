@@ -24,7 +24,7 @@ const nav = [{
 
 const loginRouter = require('./src/routes/loginroute');
 const signupRouter = require('./src/routes/signuproute');
-const homeRouter = require('./src/routes/homerouter'); //Part #1 Point 3 changed homeroute--> homerouter
+const homeRouter = require('./src/routes/homerouter'); //Part #1 Point 3 changed homeroute to homerouter
 const booksRouter = require('./src/routes/booksroute');
 const authorsRouter = require('./src/routes/authorsroute');
 
@@ -61,11 +61,3 @@ app.listen(process.env.PORT || 5000, () => {
 });
 
 
-
-
-
-
-
-app.listen(PORT, () => {
-    console.log(`Server Ready on ${PORT}`);
-});
