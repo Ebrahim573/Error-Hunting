@@ -1,7 +1,7 @@
 const express = require('express'); //Part #2 Point 1 --> Added node modules & //Part #1 Point 1 --> installed express
 const path = require('path');
 const cors = require('cors');
-const bodyParser = require('body-parser') //error no-2.  bodyparser defined//
+const bodyParser = require('body-parser')  // Part #1 Point 2 .  bodyparser defined//
 
 
 const nav = [{
